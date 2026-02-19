@@ -3,38 +3,109 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>X-ADV 750 e casco Joker</title>
+  <title>Honda X-ADV 750 — Casco Joker</title>
   <style>
-    :root{--bg:#f6f7fb;--card:#fff;--muted:#556}
-    body{font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial;line-height:1.4;margin:0;background:var(--bg);color:#111}
-    main{max-width:900px;margin:3rem auto;padding:2rem;background:linear-gradient(180deg,var(--card),#fafafa);border-radius:12px;box-shadow:0 6px 30px rgba(16,24,40,0.06)}
-    h1{font-size:1.6rem;margin:0 0 .25rem}
+    :root{--bg:#0f172a;--card:#0b1220;--accent:#ff6b6b;--muted:#94a3b8}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial;margin:0;background:linear-gradient(180deg,#071028 0%, #071827 60%);color:#e6eef8}
+    header{max-width:1100px;margin:2rem auto;padding:1rem 1.25rem;display:flex;align-items:center;gap:1rem}
+    header h1{margin:0;font-size:1.4rem;letter-spacing:0.2px}
+    .container{max-width:1100px;margin:0 auto;padding:1rem}
+    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:1.25rem;align-items:stretch}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,0.03),rgba(255,255,255,0.02));border-radius:12px;padding:1rem;box-shadow:0 8px 30px rgba(2,6,23,0.6);overflow:hidden}
+    .hero .visual{background-size:cover;background-position:center;border-radius:10px;min-height:300px;position:relative}
+    .visual .tag{position:absolute;left:12px;bottom:12px;background:rgba(2,6,23,0.6);padding:6px 10px;border-radius:999px;font-weight:600;color:#fff}
+    h2{margin:0 0 .5rem;color:#fff}
     p.lead{color:var(--muted);margin:0 0 1rem}
-    .images{display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;margin-top:1rem}
-    figure{margin:0;text-align:center}
-    img{display:block;max-width:320px;height:auto;border-radius:8px;box-shadow:0 6px 18px rgba(2,6,23,0.08)}
-    figcaption{margin-top:.5rem;color:#334155;font-size:.95rem}
-    footer{margin-top:1.5rem;text-align:center;color:#64748b;font-size:.85rem}
+    .specs{display:grid;grid-template-columns:repeat(2,1fr);gap:.75rem}
+    .spec{background:rgba(255,255,255,0.02);padding:.75rem;border-radius:8px}
+    .spec strong{display:block;color:#fff}
+    .features{margin-top:1rem}
+    .images-row{display:flex;gap:1rem;margin-top:1rem;flex-wrap:wrap}
+    .images-row img{width:100%;height:auto;border-radius:8px;object-fit:cover}
+    .col{display:flex;flex-direction:column;gap:.75rem}
+    footer{max-width:1100px;margin:2rem auto;color:#94a3b8;text-align:center;font-size:.9rem}
+    @media (max-width:900px){.hero{grid-template-columns:1fr;}.specs{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
-  <main>
-    <h1>X-ADV 750 — Honda</h1>
-    <p class="lead">Ecco un esempio visivo: la X-ADV 750 e un casco in stile "Joker" (illustrazione stilizzata).</p>
+  <header>
+    <h1>Honda X-ADV 750 — Presentazione & Casco Joker</h1>
+  </header>
 
-    <div class="images">
-      <figure>
-        <img src="images/xadv750.svg" alt="X-ADV 750">
-        <figcaption>X-ADV 750 (illustrazione)</figcaption>
-      </figure>
+  <main class="container">
+    <section class="hero">
+      <div class="card">
+        <div class="visual" style="background-image:url('images/xadv-user.png');">
+          <div class="tag">X-ADV 750 (foto rappresentativa)</div>
+        </div>
+        <div style="margin-top:1rem">
+          <h2>Panoramica</h2>
+          <p class="lead">La Honda X-ADV 750 è una crossover tra scooter e adventure-bike pensata per chi cerca comfort urbano e capacità su strada sterrata. Questa pagina presenta immagini realistiche di riferimento, descrizioni e informazioni pratiche sul veicolo e su un casco dallo stile "Joker".</p>
 
-      <figure>
-        <img src="images/casco-joker.svg" alt="Casco Joker">
-        <figcaption>Casco Joker (illustrazione)</figcaption>
-      </figure>
-    </div>
+          <div class="features">
+            <h3 style="margin:.5rem 0 0">Caratteristiche principali</h3>
+            <ul style="margin:.5rem 0 0 1rem;color:var(--muted)">
+              <li>Configurazione motore: bicilindrico parallelo di cilindrata intorno ai 750 cc (valore indicativo).</li>
+              <li>Trasmissione: disponibile con cambio automatico a doppia frizione (DCT) per guida fluida in città.</li>
+              <li>Ergonomia: posizione di guida rialzata, protezione dal vento e comodi vani portaoggetti.</li>
+              <li>Sospensioni: assetto studiato per garantire stabilità su asfalto e comfort su brevi tratti non asfaltati.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-    <footer>Immagini create come SVG semplici per esempio.</footer>
+      <aside class="card col">
+        <div>
+          <h2>Specifiche (indicative)</h2>
+          <div class="specs">
+            <div class="spec"><strong>Cilindrata</strong><span>~750 cc (indicativa)</span></div>
+            <div class="spec"><strong>Peso a vuoto</strong><span>circa 220–240 kg (indicativo)</span></div>
+            <div class="spec"><strong>Capacità serbatoio</strong><span>intorno a 13–15 L</span></div>
+            <div class="spec"><strong>Trasmissione</strong><span>Automatico DCT o manuale a seconda della versione</span></div>
+          </div>
+        </div>
+
+        <div style="margin-top:1rem">
+          <h3>Consigli d'uso</h3>
+          <p style="color:var(--muted);margin:0">Ideale per pendolarismo e viaggi leggeri; mantiene comfort in città e versatilità su percorsi meno rifiniti. Per dati tecnici ufficiali, consultare il sito Honda o il manuale del modello specifico.</p>
+        </div>
+      </aside>
+    </section>
+
+    <section style="margin-top:1.5rem" class="card">
+      <h2>Casco — Stile "Joker"</h2>
+      <div class="images-row">
+        <div style="flex:1 1 350px;">
+          <img src="images/casco-user.png" alt="Casco Joker foto rappresentativa">
+        </div>
+        <div style="flex:1 1 300px;padding-left:0.75rem;min-width:240px;">
+          <p class="lead">Il casco in stile "Joker" qui mostrato è una rappresentazione fotografica: colori contrastanti, grafiche forti e un design pensato per impatto visivo. Quando si sceglie un casco, la priorità è la sicurezza e la conformità alle normative locali.</p>
+
+          <h3>Caratteristiche importanti</h3>
+          <ul style="color:var(--muted)">
+            <li>Materiali: scocca in fibra/composito o policarbonato con buon assorbimento degli impatti.</li>
+            <li>Omologazioni: verificare la presenza di certificazioni come ECE 22.05/22.06 o DOT a seconda del mercato.</li>
+            <li>Comfort: imbottiture rimovibili e lavabili, regolazione efficiente e buona ventilazione.
+            </li>
+            <li>Visibilità: visiera con trattamento antiappannamento e anti-graffio; opzioni per schermi scuri o fotocromatici.</li>
+          </ul>
+
+          <h3>Consigli per l'acquisto</h3>
+          <p style="color:var(--muted);margin:0">Prova sempre il casco prima dell'acquisto, assicurati che calzi correttamente (non troppo largo né troppo stretto) e controlla le date di produzione/validità. Le grafiche come quelle "Joker" sono popolari, ma non sacrificare la sicurezza per l'estetica.</p>
+        </div>
+      </div>
+    </section>
+
+    <section style="margin-top:1.25rem" class="card">
+      <h2>Confronto pratico e suggerimenti finali</h2>
+      <p style="color:var(--muted)">La X-ADV è una scelta interessante se cerchi un mix tra praticità urbana e capacità di esplorazione leggera. Abbina sempre il giusto equipaggiamento: casco omologato, giacca con protezioni, guanti e stivali adeguati. Per chi viaggia spesso, considera la versione con DCT per ridurre l'affaticamento nelle percorrenze a bassa velocità.</p>
+    </section>
+
   </main>
+
+  <footer>
+    Foto rappresentative fornite da Unsplash (via source.unsplash.com) — cerca immagini con keyword "motorcycle, adventure" e "helmet" per varianti realistiche.
+  </footer>
 </body>
 </html>
