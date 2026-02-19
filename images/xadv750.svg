@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <rect y="320" width="100%" height="40" fill="#eef2ff"/>
+  <g stroke="#0f172a" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- wheels -->
+    <circle cx="200" cy="320" r="44" fill="#0f172a" opacity="0.08" stroke="none"/>
+    <circle cx="560" cy="320" r="44" fill="#0f172a" opacity="0.08" stroke="none"/>
+    <circle cx="200" cy="320" r="36" fill="#111" stroke="#000"/>
+    <circle cx="560" cy="320" r="36" fill="#111" stroke="#000"/>
+    <!-- body silhouette -->
+    <path d="M120 300 C170 230, 280 220, 350 250 C390 270, 480 270, 540 250 C590 235, 660 240, 720 300" stroke="#0b1724" stroke-width="8" fill="none"/>
+    <path d="M180 260 C230 240, 330 230, 420 250" stroke="#0b1724" stroke-width="6" fill="none"/>
+    <path d="M420 250 C440 210, 520 200, 580 220" stroke="#0b1724" stroke-width="6" fill="none"/>
+  </g>
+  <g fill="#111" font-family="sans-serif" font-size="24" font-weight="600">
+    <text x="36" y="48">X-ADV 750</text>
+    <text x="36" y="76" font-size="14" font-weight="400" fill="#475569">Honda — illustrazione stilizzata</text>
+  </g>
+</svg>
